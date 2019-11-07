@@ -7,7 +7,7 @@ using HtmlAgilityPack;
 using System.Linq;
 
 
-namespace YahooScraper.Scraper
+namespace BlazorScraper.Data
 {
     public class YahooFinance
     {
