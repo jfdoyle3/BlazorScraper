@@ -2,23 +2,14 @@
 using RestSharp;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using unirest_net.http;
-using RestSharp.Authenticators;
-using System.IO;
-
-
+using Microsoft.Data.SqlClient;
 
 namespace RestSharpConsole
 {
     public class YahooAPI
     {
 
-        public static void YahooAPI()
+        public static void RestSharp()
         {
             Console.WriteLine("Start");
             RestClient yahoo = new RestClient("https://apidojo-yahoo-finance-v1.p.rapidapi.com");
