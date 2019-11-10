@@ -4,12 +4,12 @@ using Newtonsoft.Json.Linq;
 using System;
 using Microsoft.Data.SqlClient;
 
-namespace RestSharpConsole
+namespace BlazorScraper.Data
 {
     public class YahooAPI
     {
 
-        public static void RestSharp()
+       public static void RestSharp()
         {
             Console.WriteLine("Start");
             RestClient yahoo = new RestClient("https://apidojo-yahoo-finance-v1.p.rapidapi.com");
@@ -52,7 +52,7 @@ namespace RestSharpConsole
                     insertStatement.ExecuteNonQuery();
                     connection.Close();
                 }
-            }       
-        }
+           }       
+       }
     }
 }
